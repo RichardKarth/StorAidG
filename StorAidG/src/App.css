@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+
+    --primary-bg-clr: #FFFFFF;
+
+    --secondary-clr-header: #12372A;
+    --accent-clr-topbar-icons: #F1C30C;
+}
