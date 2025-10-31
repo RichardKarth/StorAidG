@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
@@ -9,4 +12,45 @@
 
     --secondary-clr-header: #12372A;
     --accent-clr-topbar-icons: #F1C30C;
+}
+
+html, body{
+    font-family: inter;
+}
+.container{
+    width: auto;
+}
+
+.top-bar{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--secondary-clr-header);
+    color: var(--primary-bg-clr);
+
+    .header-contact-info{
+        display: flex;
+        align-items: center;
+        margin-left: 4rem;
+        gap: 2rem;
+
+        .top-bar-phone{
+            display: flex;
+            gap: .5rem;
+        }
+        .top-bar-contact{
+            display: flex;
+            gap: .5rem;
+        }
+
+    }
+    .header-socials-links{
+        display: flex;
+        align-items: center;
+        margin-right: 4rem;
+        gap: 1rem;
+    }
+
 }
