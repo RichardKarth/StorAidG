@@ -18,6 +18,8 @@
     --accent-clr-offwhite: #F1FFEA;
 
     --square-clr-grey: #ECECEC;
+
+    --bg-clr-beige: #FAF8EC;
 }
 
 html, body{
@@ -296,3 +298,20 @@ html, body{
     }
 }
 
+.logos-wrapper{
+    height: 100px;
+    width: 100%;
+    background-color: var(--bg-clr-beige);
+    margin-top: 8rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+    .logos-items{
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+    }
+}
