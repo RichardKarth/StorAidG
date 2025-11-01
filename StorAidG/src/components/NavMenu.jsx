@@ -8,14 +8,14 @@ const NavMenu = () => {
       </div>
 
       <div className='nav-menu-options'>
-          <p>HOME</p>
-          <p>ABOUT US</p>
-          <p>SERVICES</p>
-          <p>CONTACT US</p>
+          <p>Home</p>
+          <p>About us</p>
+          <p>Services</p>
+          <p>Contact Us</p>
       </div>
 
       <div>
-        <button className='nav-menu-button'>BOOK NOW</button>
+        <button className='book-now-btn'>Book Now</button>
       </div>
     </div>
   )

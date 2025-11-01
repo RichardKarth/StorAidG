@@ -11,7 +11,11 @@
     --primary-bg-clr: #FFFFFF;
 
     --secondary-clr-header: #12372A;
-    --accent-clr-topbar-icons: #F1C30C;
+    --accent-clr-yellow: #F1C30C;
+
+    --accent-clr-hero-bg: #12372ACC;
+
+    --accent-clr-offwhite: #F1FFEA;
 }
 
 html, body{
@@ -19,6 +23,32 @@ html, body{
 }
 .container{
     width: auto;
+}
+
+.book-now-btn{
+
+        background-color: var(--accent-clr-yellow);
+        color: var(--secondary-clr-header);
+
+        font-size: 15px;
+        font-weight: 600;
+        border-radius: 5px;
+        padding: 1rem 2rem;
+
+        border: 1px solid var(--accent-clr-yellow);
+        
+}
+.discover-more-btn{
+
+    background-color: var(--accent-clr-yellow);
+        color: var(--secondary-clr-header);
+
+        font-size: 15px;
+        font-weight: 600;
+        border-radius: 5px;
+        padding: .8rem 1.8rem;
+
+        border: 1px solid var(--accent-clr-yellow);
 }
 
 .top-bar{
@@ -75,19 +105,48 @@ html, body{
     .nav-menu-options{
         display: flex;
         gap: 2rem;
+    }    
+}
+
+.hero-container{
+    background-color: var(--accent-clr-hero-bg);
+    font-family: urbanist;
+
+    h4{
+        font-weight: 700;
+        font-size: 25px;
+        color: var(--accent-clr-yellow);
+    }
+    h1{
+        font-weight: 700;
+        font-size: 80px;
+        color: var(--accent-clr-offwhite);
+        line-height: 80px;
+        margin-bottom: 20px;
+    }
+    p{
+        font-size: 16px;
+        color: var(--primary-bg-clr);
+        margin-right: 30px;
+        margin-bottom: 20px;
+        line-height: 24px;
     }
 
-    .nav-menu-button{
+    .hero-box{
+        display: flex;
+        margin-left: 275px;
+        margin-right: 275px;
+        gap: 150px;
 
-        background-color: var(--accent-clr-topbar-icons);
-        color: var(--secondary-clr-header);
-
-        font-size: 15px;
-        font-weight: 600;
-        border-radius: 5px;
-        padding: 1rem 2rem;
-
-        border: 1px solid var(--accent-clr-topbar-icons);
-        
+        .hero-text{
+            width: 735px;
+            margin-top: 180px;
+        }
+        .hero-image{
+            display: flex; 
+            width: 462px;
+            margin-top: 180px;   
+        }
     }
 }
+
