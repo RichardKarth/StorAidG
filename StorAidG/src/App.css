@@ -333,9 +333,7 @@ html, body{
 
         display: flex;
         align-items: center;
-        gap: 2rem;
         
-
         .our-services-upper-left-box{
             width: 50%;
            
@@ -351,7 +349,7 @@ html, body{
     }
     .our-services-lower-box{
         display: flex;
-        margin-top: 2rem;
+        margin-top: 1rem;
 
         h4{
             margin-bottom: 1rem;
