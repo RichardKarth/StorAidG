@@ -22,6 +22,8 @@
     --bg-clr-beige: #FAF8EC;
     
     --testimonials-accent-clr-80: rgba(18, 55, 42, 0.8);
+
+    --why-choose-us-bg-clr: #FAF8EC;
 }
 
 html, body{
@@ -514,4 +516,75 @@ html, body{
             color: var(--secondary-clr-header);
         }
     }
+}
+
+
+
+.why-us-wrapper {
+  background-color: var(--why-choose-us-bg-clr);
+  padding: 95px 0;
+
+  .why-us-container{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+
+    .why-us-left-side{
+        
+        .why-us-title{
+            width: 670px;
+        }
+
+        h4{
+            color: var(--accent-clr-yellow);
+            font-size: 25px;
+        }
+        h3{
+            font-size: 52px;
+            color: var(--secondary-clr-header);
+            text-align:left;
+            width: 720px;
+            line-height: 52px;
+        }
+
+    }
+    .why-us-right-side{
+        margin-top: 4rem;
+        color: var(--secondary-clr-header);
+
+        p{
+            text-align: left;
+            width: 670px;
+        }
+
+            .why-us-square{
+                width: 650px;
+                height: 420px;
+                background-color: lightgrey;
+                border: 3px solid var(--square-clr-grey);
+                margin: 3rem 0rem;
+            }
+    }
+  }
+  
+    .margin-wrapper-bg {
+        max-width: 1320px;
+        margin: auto auto;
+    }
+
+    .why-choose-us-information{
+        color: var(--secondary-clr-header);
+        h5{
+            font-size: 24px;
+            margin-left: 1rem;
+            margin-top: 1rem;
+        }
+        p{
+            margin-left: 1rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+        display: flex;
+    }
+
 }
