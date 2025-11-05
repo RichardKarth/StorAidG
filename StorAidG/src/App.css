@@ -24,6 +24,8 @@
     --testimonials-accent-clr-80: rgba(18, 55, 42, 0.8);
 
     --why-choose-us-bg-clr: #FAF8EC;
+
+    --unit-card-bg-clr: #F1FFEA;
 }
 
 html, body{
@@ -586,5 +588,93 @@ html, body{
         }
         display: flex;
     }
-
 }
+
+
+
+.price-plan-top-div{
+    margin-bottom: 1rem;
+    h4{
+        color: var(--accent-clr-yellow);
+        font-size: 25px;
+        line-height: 25px;
+        margin-bottom: 2rem;
+    }
+    h3{
+        color: var(--secondary-clr-header);
+        font-size: 52px;
+        line-height: 52px;
+        width: 650px;
+    }
+}
+.price-plan-bottom-div{
+    display: flex;
+    gap: 1rem;
+    .unit-card{
+        width: 320px;
+        height: 520px;
+        background-color: var(--unit-card-bg-clr);
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+        text-align: center;
+        h5{
+            font-size: 24px;
+            font-weight: 400;
+            margin-top: 2rem;
+        }
+        color: var(--secondary-clr-header);
+        .price-plan-deals{
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+            h3{
+                font-size: 56px;
+                color: var(--accent-clr-yellow);
+            }
+            h6{
+                display: flex;
+                margin-top: 2rem;
+                font-size: 20px;
+            }
+        }
+        .feature-item{
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+
+            .check-icon{
+                width: 13px;
+                height: 13px;
+            }
+        }
+        h5{
+            font-size: 24px;
+            color: var(--secondary-clr-header);
+        }
+        .divider{
+            border: none;
+            height: 1px;
+            width: 260px;
+            background-color: var(--secondary-clr-header);
+        }
+    }
+    .unit-card:hover{
+        background-color: var(--secondary-clr-header);
+        color: var(--unit-card-bg-clr);
+        transition: 300ms;
+        h5{
+            color: var(--unit-card-bg-clr);
+        }
+    }
+    .unit-card:hover .check-icon{
+        content: url('../src/assets/Yellow-checkmark-icon.svg');
+    }
+    .unit-card:hover .divider{
+        background-color: var(--unit-card-bg-clr);
+    }
+}
+
+
+
