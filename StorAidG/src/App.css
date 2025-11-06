@@ -843,3 +843,34 @@ html, body{
     }
 }
 
+.all-rights-reserved-bg{
+    background-color: var(--secondary-clr-header);
+    height: 90px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.all-rights-wrapper{
+    width: 1320px;
+    margin: 0px auto;
+    
+}
+.all-rights-container{
+
+    color: var(--primary-bg-clr);
+    display: flex;
+    justify-content: space-between;
+    a{
+        text-decoration: none;
+        color: var(--primary-bg-clr);
+    }
+    .all-rights-a-taggs{
+        display: flex;
+        gap: 2rem;
+    }
+}
+.all-right-a-tagg-gap{
+    display: flex;
+    gap: .5rem;
+}
