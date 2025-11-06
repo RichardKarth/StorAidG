@@ -26,6 +26,8 @@
     --why-choose-us-bg-clr: #FAF8EC;
 
     --unit-card-bg-clr: #F1FFEA;
+
+    --booknow-bg-clr: #12372ACC;
 }
 
 html, body{
@@ -674,6 +676,30 @@ html, body{
     .unit-card:hover .divider{
         background-color: var(--unit-card-bg-clr);
     }
+}
+
+.booknow-bg{
+    background-color: var(--booknow-bg-clr);
+    color: var(--why-choose-us-bg-clr);
+    height: 440px;
+    text-align: center;
+    
+    h3{
+        padding-top: 5rem;
+        font-size: 52px;
+        width: 1100px;
+        margin: 0 auto;
+        line-height: 52px;
+    }
+    p{
+        padding-top: 1rem;
+        width: 1050px;
+        margin: 0 auto;
+    }
+    button{
+        margin-top:1.2rem;
+    }   
+    
 }
 
 
