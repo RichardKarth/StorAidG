@@ -28,6 +28,8 @@
     --unit-card-bg-clr: #F1FFEA;
 
     --booknow-bg-clr: #12372ACC;
+
+    --news-letter-bg-clr: #FAF8EC;
 }
 
 html, body{
@@ -791,4 +793,53 @@ html, body{
     }
 }
 
+
+
+.news-letter-bg{
+    background-color: var(--news-letter-bg-clr);
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.news-letter-container{
+    display: flex;
+    gap: 5rem;
+    width: 1300px;
+    align-items: center;
+    
+}
+.news-letter-left-side{
+    display: grid;
+    width: 700px;
+    color: var(--secondary-clr-header);
+    h3{
+        font-size: 52px;
+        margin-bottom: 1rem;
+    }
+    
+}
+.news-letter-right-side form{
+    display: flex;
+    width: 600px;
+    gap: 2rem;
+
+    input{
+        width: 100%;
+        padding: 5px 15px;
+        border: 2px solid var(--accent-clr-yellow);
+        outline: 0;
+        border-radius: 5px;
+        
+        
+    }
+    input::placeholder{
+        color: var(--accent-clr-yellow);
+        font-size: 16px;
+    }
+
+    button{
+
+    }
+}
 
