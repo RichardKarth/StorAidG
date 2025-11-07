@@ -34,9 +34,17 @@
 
 html, body{
     font-family: inter;
+    height: 100%;
+   
+}
+main {
+  flex: 1;                 /* tar upp allt tillgängligt utrymme mellan header och footer */
 }
 .container{
     width: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .margin-wrapper{
@@ -67,6 +75,12 @@ html, body{
         padding: .8rem 1.8rem;
 
         border: 1px solid var(--accent-clr-yellow);
+}
+
+.main-header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .top-bar{
@@ -111,22 +125,27 @@ html, body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0rem 4rem 0rem 4rem;
+    padding: 0rem 4rem 0rem 4rem;
 
     font-family: urbanist;
     font-weight: 600;
     font-size: 18px;
 
-    .nav-menu-icon{
-
-    }
-
     .nav-menu-options{
         display: flex;
         gap: 2rem;
+
+        .nav-link{
+            text-decoration: none;
+            color: var(--secondary-clr-header);
+            font-size: 18px;
+            line-height: 25px;
+        }
     }    
 }
-
+.active{
+    color: var(--accent-clr-yellow);
+}
 .hero-container{
     background-color: var(--accent-clr-hero-bg);
     font-family: urbanist;
@@ -873,4 +892,22 @@ html, body{
 .all-right-a-tagg-gap{
     display: flex;
     gap: .5rem;
+}
+
+.about-hero-bg{
+    background-color: var(--accent-clr-hero-bg);
+    height: 460px;
+}
+.padding-wrapper{
+    padding: 155px 275px;
+}
+.about-hero-text{
+    color: var(--accent-clr-offwhite);
+    h1{
+        font-size: 80px;
+    }
+    p{
+        width: 600px;
+        margin-top: 1rem;
+    }
 }
