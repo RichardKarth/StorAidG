@@ -919,13 +919,19 @@ main {
 }
 
 .get-in-touch-container{
+
     display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
 
 
     .get-in-touch-left-side{
         display: grid;
         gap: 1rem;
         color: var(--secondary-clr-header);
+
+        flex: 1;
 
         h4{
             color: var(--accent-clr-yellow);
@@ -942,7 +948,79 @@ main {
 
     }
     .get-in-touch-right-side{
-        
+        flex: 1;
     }
 
+}
+
+.reg-form{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-clr-beige);
+    width: 100%;
+    justify-content: space-between;
+    height: auto;
+    border-radius: 15px;
+    
+    
+    input{
+        border-radius: 5px;
+        padding: 1rem;
+    }
+
+    button{
+        width: 150px;
+    }
+
+    .input-group{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1.5rem 3rem;
+    }
+    .textarea-input{
+        padding: 0px 3rem;
+    }
+    .submit-btn-form{
+        padding-bottom: 1.5rem;
+    }
+    .email-telephone-div {
+        display: flex;
+        gap: 1rem;
+        padding: 0 3rem;
+    }
+
+    .email-telephone-div .input-group {
+        flex: 1;
+        padding: 0;
+    }
+
+    .form-label{
+        display: block;
+    }
+    .form-input{
+        font: inherit;
+        width: 100%;
+        border: 1px solid var(--accent-clr-yellow);
+    }
+    .form-input::placeholder{
+        color: var(--accent-clr-yellow);
+    }
+    .form-input:focus{
+       outline: none;
+    }
+
+    textarea{
+        resize: none;
+        border: 1px solid var(--accent-clr-yellow);
+        border-radius: 5px;
+        font-family: inherit;
+        font-size: inherit;
+        padding: 1rem;
+        height: 150px;
+        outline: none;
+    }
+    textarea::placeholder{
+        color: var(--accent-clr-yellow);
+    }
 }
