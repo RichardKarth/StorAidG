@@ -911,3 +911,38 @@ main {
         margin-top: 1rem;
     }
 }
+
+.get-in-touch-square{
+    height: 369px;
+    width: 664px;
+    background-color: lightgrey;
+}
+
+.get-in-touch-container{
+    display: flex;
+
+
+    .get-in-touch-left-side{
+        display: grid;
+        gap: 1rem;
+        color: var(--secondary-clr-header);
+
+        h4{
+            color: var(--accent-clr-yellow);
+            font-size: 25px;
+        }
+        h3{
+            font-size: 52px;
+            line-height: 52px;
+            width: 690px;
+        }
+        p{
+            width: 600px;
+        }
+
+    }
+    .get-in-touch-right-side{
+        
+    }
+
+}
