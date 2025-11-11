@@ -22,17 +22,14 @@ const GetInTouchForm = () => {
         if (res.ok){
             const data = await res.text()
             console.log(data)
+            setFormData({name:'', email:'', telephone:'', subject:'', comment:''})
+            
         }
         else{
             const data = await res.json()
             console.log(data)
         }
-
-        
-
     }
-
-
 
   return (
     <div>
