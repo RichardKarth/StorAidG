@@ -976,7 +976,11 @@ main {
         display: flex;
         flex-direction: column;
         gap: 1rem;
-        padding: 1.5rem 3rem;
+        padding: .5rem 3rem;
+
+        .your-name-label{
+            padding-top: 1rem;
+        }
     }
     .textarea-input{
         padding: 0px 3rem;
@@ -1023,4 +1027,24 @@ main {
     textarea::placeholder{
         color: var(--accent-clr-yellow);
     }
+    .errors-message{
+        color: red;
+ 
+    }
+}
+.message-popup{
+    background-color: var(--booknow-bg-clr);
+    color: limegreen;
+    font-weight: 800;
+    font-size: 1.2rem;
+    padding: 5rem;
+    border-radius: 15px;
+
+
+    p{
+        margin-bottom: 1rem;
+        
+    }
+    
+   
 }
