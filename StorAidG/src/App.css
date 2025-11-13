@@ -500,47 +500,42 @@ main {
             margin-top: 1rem;
         }
 
-        .testimonials-grade{
+        .testimonials-card{
+            padding: 2rem;
+            border-radius: 15px;
+            background-color: var(--primary-bg-clr);
+            color: var(--secondary-clr-header);
+            display: grid;
 
         }
-        .testimonial-comments{
+        .testimonials-rating{
+            color: var(--secondary-clr-header);
+            background-color: var();
+        }
+        .testimonials-avatar-url{
+            img{
+                border-radius: 50%;
+            }
 
         }
-        .customer-info{
+        .name-and-picture{
             display: flex;
-            justify-content: space-between;
             align-items: center;
+            justify-content: space-between;
 
-            .customer-name{
-                h6{
-                    font-size: 20px;
-                }
-                display: flex;
-                flex-direction: column;
-                gap: .5rem;
+            
+        }
+        .name-and-companyName{
+            display: grid;
+            h6{
+                font-size: 20px;
             }
-            .avatar-and-name{
-                display: flex;
-                gap: 1rem;
-            }
+        }
 
-        }
-        .customer-avatar{
-            height: 70px;
-            width: 70px;
-            background-color: grey;
-            border-radius: 50%;
-        }
        
-        .testimonials-card-1{
-            color: var(--secondary-clr-header);
-        }
-        .testimonials-card-2{
-            color: var(--secondary-clr-header);
-        }
-        .testimonials-card-3{
-            color: var(--secondary-clr-header);
-        }
+
+        
+
     }
 }
 
