@@ -34,8 +34,9 @@ const FaqAccordion = () => {
       {accordionItems.length > 0 ? (accordionItems.map((question, index) => (
         
           <div key={index} className="faq-card">
-            <div className="faq-question" onClick={() => toggleOpen(index)}>
+            <div className={`faq-question ${isOpen === index ? 'faq-question-open' : ''}`} onClick={() => toggleOpen(index)}>
               <h5>{question.title}</h5>
+              
               <button className="faq-button" type="button">
                 <span className="material-symbols-outlined">
                   {isOpen === index ? 'keyboard_arrow_up' : 'keyboard_arrow_down'}
