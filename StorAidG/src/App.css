@@ -757,53 +757,48 @@ main {
 .blog-section-lower{
     display: flex;
     gap: 2rem;
-    .blog-section-cards{
-        .blog-square-texts{
-            display: grid;
-            justify-content: space-between;
-            padding: 0rem 2rem;
-            margin-bottom: 2rem;
-            h6{
-                font-size: 20px;
-                line-height: 25px;
-            }
-            .blog-dates{
-                display: flex;
-                gap: .5rem;
-                font-size: 14px;
-                img{
-                    height: 15px;
-                }
-            }
-            .a-tagg-style{
-                display: flex;
-            }
-            .material-symbols-outlined{
-                color: var(--accent-clr-yellow);
-                font-size: 23px;
-            }
-        }
-        .blog-square{
-            width: 350px;
-            height: 250px;
-            background-color: lightgrey;
-            border-radius: 5px;
-            margin: auto auto;
-        }
+    align-items: flex-start;
 
+    .blog-card{
         background-color: var(--secondary-clr-header);
-        border-radius: 5px;
-        width: 410px;
-        height: 550px;
-
-        display: grid;
-        justify-content: space-between;
-
+        padding: 2rem;
         color: var(--primary-bg-clr);
+        border-radius: 10px;
 
-        a{
-            text-decoration: none;
+        h6{
+            font-size: 20px;
+        }
+        p{
+            font-size: 16px;
+        }
+
+        .blog-created{
+            display: flex;
+            font-size: 14px;
+            gap: 1rem;
+            padding: 1rem 0rem;
+        }
+        .blog-title{
+            padding: 1rem 0rem;
+        }
+        .read-more button{
+            border: none;
+            background-color: transparent;
+            text-decoration: underline;
             color: var(--accent-clr-yellow);
+            font-size: 18px;
+
+            &:hover{
+                font-size: 20px;
+            }
+        }
+        .blog-description{
+            max-height: 100px;
+            overflow: hidden;
+            transition: max-height 600ms;
+        }
+        .blog-description.expanded{
+            max-height: 500px;
         }
     }
 }

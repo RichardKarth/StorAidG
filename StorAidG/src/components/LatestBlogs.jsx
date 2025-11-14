@@ -1,6 +1,27 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useState } from 'react';
 
 const LatestBlogs = () => {
+
+  const [blogPost, setBlogPost] = useState([])
+  const [expandedBlog, setExpandedBlog] = useState(null);
+
+  const getData = async () => {
+    const res = await fetch('https://win25-jsf-assignment.azurewebsites.net/api/blogs')
+    const data = await res.json();
+    setBlogPost(data);
+  }
+
+  useEffect( () => {
+    getData()
+  }, []);
+
+ const readMoreText = (id) => {
+  setExpandedBlog(expandedBlog === id ? null : id);
+
+ }
+
+
   return (
     <div className='margin-wrapper'>
       <div className='blog-section-upper'>
@@ -16,60 +37,40 @@ const LatestBlogs = () => {
 
       <div className='blog-section-lower'>
 
-        <div className='blog-section-cards'>
-          <div className='blog-square'></div>
-          <div className='blog-square-texts'>
-              <div className='blog-dates'>
+        {blogPost.map((item) => {
+          return(
+            
+            <div className='blog-card' key={item.id}>
+              <div>
+                <img src={item.imageUrl} alt="" />
+              </div>
+              <div className='blog-created'>
                 <img src="../src/assets/Calendar-icon.svg" alt="" />
-                <p>August 17, 2025</p>
+                <p>{item.created}</p>
               </div>
-            <h6>Safe and Secure: The Importance of Choosing the Right Storage</h6>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a sem magna. Etiam ac odio sit amet lorem…</p>
-            <div className='a-tagg-style'>
-                <a href="#">Read More</a>
-                <span className="material-symbols-outlined">
-                  arrow_right_alt
-                </span>
-              </div>
-          </div>
-        </div>
 
-        <div className='blog-section-cards'>
-          <div className='blog-square'></div>
-            <div className='blog-square-texts'>
-              <div className='blog-dates'>
-                <img src="../src/assets/Calendar-icon.svg" alt="" />
-                <p>August 17, 2025</p>
+              <div className='blog-title'>
+                <h6>{item.title}</h6>
               </div>
-            <h6>Safe and Secure: The Importance of Choosing the Right Storage</h6>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a sem magna. Etiam ac odio sit amet lorem…</p>
-            <div className='a-tagg-style'>
-                <a href="#">Read More</a>
-                <span className="material-symbols-outlined">
-                  arrow_right_alt
-                </span>
-              </div>
-          </div>
-        </div>
 
-        <div className='blog-section-cards'>
-          <div className='blog-square'></div>
-            <div className='blog-square-texts'>
-              <div className='blog-dates'>
-                <img src="../src/assets/Calendar-icon.svg" alt="" />
-                <p>August 17, 2025</p>
+              <div className={`blog-description ${expandedBlog === item.id ? 'expanded' : ''}`}>
+                <p>{item.description}</p>
               </div>
-            <h6>Safe and Secure: The Importance of Choosing the Right Storage</h6>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a sem magna. Etiam ac odio sit amet lorem…</p>
-              <div className='a-tagg-style'>
-                <a href="#">Read More</a>
-                <span className="material-symbols-outlined">
-                  arrow_right_alt
-                </span>
-              </div>
-          </div>
-        </div>
 
+              <div className='read-more'>
+                <button onClick={() => readMoreText(item.id)}>
+                  {expandedBlog === item.id ? 'show less' : 'show more'}
+                </button>
+
+              </div>
+
+            </div>
+          )
+        })
+        
+        
+        }
+        
       </div>
     </div>
   )
