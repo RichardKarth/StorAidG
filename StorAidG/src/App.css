@@ -809,7 +809,7 @@ main {
     background-color: var(--news-letter-bg-clr);
     height: 150px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 .news-letter-container{
@@ -817,15 +817,23 @@ main {
     gap: 5rem;
     width: 1300px;
     align-items: center;
+
+    .subscribe-message{
+        margin-top: 1rem;
+        
+    }
     
 }
 .news-letter-left-side{
     display: grid;
     width: 700px;
     color: var(--secondary-clr-header);
+    flex: 1;
+    
     h3{
         font-size: 52px;
         margin-bottom: 1rem;
+        width: 700px;
     }
     
 }
@@ -833,6 +841,9 @@ main {
     display: flex;
     width: 600px;
     gap: 2rem;
+    flex: 1;
+
+    
 
     input{
         width: 100%;
@@ -1018,10 +1029,6 @@ main {
     textarea::placeholder{
         color: var(--accent-clr-yellow);
     }
-    .errors-message{
-        color: red;
- 
-    }
 }
 .message-popup{
     background-color: var(--booknow-bg-clr);
@@ -1030,19 +1037,19 @@ main {
     font-size: 1.2rem;
     padding: 5rem;
     border-radius: 15px;
-
-
+    
+    
     p{
         margin-bottom: 1rem;
         
     }
     
-   
+    
 }
 .faq-container{
     display: flex;
     margin-bottom: 8rem;
-
+    
     .faq-left-side{
         flex: 1;
         color: var(--secondary-clr-header);
@@ -1067,11 +1074,11 @@ main {
 .faq{
     background-color: FFFFFF;
     max-width: 664px;
-
+    
     .faq-card{
         margin: 1rem 0rem;
         .faq-question{
-
+            
             display: flex;
             justify-content: space-between;
             background-color: var(--square-clr-grey);
@@ -1081,30 +1088,30 @@ main {
             align-items: center;
             padding: 0px 10px;
             cursor: pointer;
-
+            
             .faq-button{
                 background-color: transparent;
                 border: 0;
                 cursor: pointer;
                 color: var(--secondary-clr-header);
             }
-
+            
         }
         .faq-question-open{
             background-color: var(--accent-clr-yellow);
             color: var(--primary-bg-clr);
-
+            
             .faq-button{
                 color: var(--primary-bg-clr);
             }
         }
-
+        
         .faq-answer{
             display: grid;
             grid-template-rows: 0fr;
             overflow: hidden;
             color: var(--secondary-clr-header);
-
+            
             transition: grid-template-rows 500ms;
         }
         .faq-answer-open{
@@ -1116,3 +1123,8 @@ main {
         }
     }
 }
+.errors-message{
+    color: red;
+
+}
+
