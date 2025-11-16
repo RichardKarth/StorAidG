@@ -4,6 +4,7 @@ import OurServices from '../components/OurServices'
 import Testimonials from '../components/Testimonials'
 import BookNow from '../components/BookNow'
 import NewsLetter from '../components/NewsLetter'
+import FAQ from '../components/FAQ'
 
 const Services = () => {
   return (
@@ -11,7 +12,7 @@ const Services = () => {
         <ServicesViewHeader/>
         <OurServices/>
         <Testimonials/>
-
+        <FAQ/>
         <BookNow/>
         <NewsLetter/>
     </div>
